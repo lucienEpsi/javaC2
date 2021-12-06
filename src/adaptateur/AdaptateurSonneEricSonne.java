@@ -6,22 +6,22 @@
 package adaptateur;
 
 import commerce.PortableSamSaoule;
+import commerce.PortableSonneEricSonne;
 
 /**
  *
  * @author 33676
  */
-public class AdaptateurSamSaoule implements IChargeable {
-    private PortableSamSaoule monTel;
-    public AdaptateurSamSaoule(PortableSamSaoule sam) {
+public class AdaptateurSonneEricSonne implements IChargeable {
+    private PortableSonneEricSonne monTel;
+    public AdaptateurSonneEricSonne(PortableSonneEricSonne sam) {
         monTel = sam;
     }
 
     @Override
     public void recharger(int volts) {
-        
-        System.out.println("Je suis enfin en charge "+volts);
-        monTel.ChargerPortable(volts);
+        System.out.println("Je suis enfin en charge à 5 volts");
+        monTel.ChargerBatteries(5);
     }
     
 }

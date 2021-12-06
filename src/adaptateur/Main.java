@@ -6,6 +6,7 @@
 package adaptateur;
 
 import commerce.PortableSamSaoule;
+import commerce.PortableSonneEricSonne;
 
 /**
  *
@@ -22,5 +23,11 @@ public class Main {
         
         IChargeable sam2 = new AdaptateurSamSaoule(sam);
         chargeur.brancherPortable(sam2);
+        
+        
+        PortableSonneEricSonne erick = new PortableSonneEricSonne();
+         IChargeable adaptateurErick = new AdaptateurSonneEricSonne(erick);
+        
+        chargeur.brancherPortable(adaptateurErick);
     }
 }
